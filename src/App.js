@@ -34,6 +34,7 @@ function App() {
         <h1>Key React Concepts</h1>
         <p>Selected key React concepts you should know about</p>
       </header>
+      {/* Excercise code */}
       {/* <ul id="concepts">
         <li className="concept">
           <img src="TODO: IMAGE" alt="TODO: TITLE" />
@@ -41,6 +42,7 @@ function App() {
           <p>TODO: DESCRIPTION</p>
         </li>
       </ul> */}
+      {/* Solution code(My Code) */}
       <ul id="concepts">
         {concepts.map((concept, index) => {
           return (

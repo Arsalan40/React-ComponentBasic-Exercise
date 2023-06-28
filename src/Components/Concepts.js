@@ -2,11 +2,11 @@ import React from "react";
 
 const Concepts = (props) => {
     return (
-        <div>
-            title={props.concept[0].title}
-            image={props.concept[0].image}
-            description={props.concept[0].description}
-        </div>
+        <li className="concept">
+          <img src={props.image} alt={props.title} />
+          <h2>{props.title}</h2>
+          <p>{props.description}</p>
+        </li>
     )
 };
 

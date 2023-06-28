@@ -1,29 +1,28 @@
-import React from 'react';
-import componentsImage from './assets/images/components.png';
-import stateImage from './assets/images/state.png';
-import eventsImage from './assets/images/events.png';
-import Header from './Components/Header';
-import Concepts from './Components/Concepts';
-
+import React from "react";
+import componentsImage from "./assets/images/components.png";
+import stateImage from "./assets/images/state.png";
+import eventsImage from "./assets/images/events.png";
+import Header from "./Components/Header";
+import Concepts from "./Components/Concepts";
 
 const concepts = [
   {
-    title: 'Components',
+    title: "Components",
     image: componentsImage,
     description:
-      'Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. Components can receive data via props, and they can render dynamic output using JSX.',
+      "Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. Components can receive data via props, and they can render dynamic output using JSX.",
   },
   {
-    title: 'State',
+    title: "State",
     image: stateImage,
     description:
-      'State is data that may change over time. As it changes, the UI should be updated to reflect the updated data. Each component can maintain its own state and multiple components can share state.',
+      "State is data that may change over time. As it changes, the UI should be updated to reflect the updated data. Each component can maintain its own state and multiple components can share state.",
   },
   {
-    title: 'Events',
+    title: "Events",
     image: eventsImage,
     description:
-      'Event handlers are added via props to (built-in) components. You pass functions as values to such event handlers to control which functions gets executed for which event.',
+      "Event handlers are added via props to (built-in) components. You pass functions as values to such event handlers to control which functions gets executed for which event.",
   },
 ];
 
@@ -31,7 +30,6 @@ function App() {
   return (
     <div>
       <Header />
-
 
       {/* Excercise code */}
       {/* <ul id="concepts">
@@ -41,7 +39,6 @@ function App() {
           <p>TODO: DESCRIPTION</p>
         </li>
       </ul> */}
-
 
       {/* Solution code(My Code) */}
       {/* <ul id="concepts">
@@ -56,13 +53,24 @@ function App() {
         })}
       </ul> */}
 
-
       {/* Solution code(Video Code) */}
       <ul id="concepts">
-       <Concepts image={concepts[0].image} title={concepts[0].title} description={concepts[0].description} />
-       <Concepts image={concepts[1].image} title={concepts[1].title} description={concepts[1].description} />
-       <Concepts image={concepts[2].image} title={concepts[2].title} description={concepts[2].description} />
-        </ul> 
+        <Concepts
+          image={concepts[0].image}
+          title={concepts[0].title}
+          description={concepts[0].description}
+        />
+        <Concepts
+          image={concepts[1].image}
+          title={concepts[1].title}
+          description={concepts[1].description}
+        />
+        <Concepts
+          image={concepts[2].image}
+          title={concepts[2].title}
+          description={concepts[2].description}
+        />
+      </ul>
     </div>
   );
 }
